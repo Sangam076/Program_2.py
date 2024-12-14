@@ -1,0 +1,14 @@
+def generate_series(a):
+    number = 1
+    series = []
+    
+    for i in range(a):
+        series.append(number)
+        number += 2
+        
+    return series
+
+a = int(input("Enter a number"))
+result = generate_series(a)
+for num in result:
+    print(num, end=" ")
